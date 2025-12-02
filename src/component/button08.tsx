@@ -5,10 +5,10 @@ type ButtonProps = {
 }
 
 
-export default function Button03 ({style} : ButtonProps) {
+export default function Button08 ({style} : ButtonProps) {
     return (
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Button
+        <button style={style}>
+            Button08
         </button>
     )
 }
