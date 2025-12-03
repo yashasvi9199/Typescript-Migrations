@@ -1,0 +1,1 @@
+export type BgColor = "bg-red-500" | "bg-green-500" | "bg-blue-500"
