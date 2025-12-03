@@ -18,6 +18,10 @@ import Button14 from "./component/button14";
 import { Button15_easy, Button15_hard } from "./component/button15";
 import Button16 from "./component/button16";
 import Button17 from "./component/button17";
+import { GuestUser, Users } from "./component/div02";
+import Div03 from "./component/div03";
+import Div04 from "./component/div04";
+import Div05 from "./component/div05";
 
 export default function Home() {
 
@@ -91,6 +95,22 @@ export default function Home() {
 
             {/* hooks: useRef */}
             <Button17 />
+
+            {/* Omit */}
+            {/* Like Button 14; intersection/extends but Opposite this time */}
+            <Users name="John" sessionID="1234pqwuirehy" />
+            <GuestUser sessionID="1234lajhsdf" />
+
+            {/* type asserion 'as' */}
+            <Div03 />
+
+            {/* Generic in React/Typescript */}
+            <Div04 value={5} pastValues={[0,10,32]} />
+            <Div04 value={"test4"} pastValues={["test1", "test2", "test3"]} />
+            <Div04 value={true} pastValues={[false, true, false]} />
+
+            {/* importing types */}
+            <Div05 bgColor="bg-red-500" color="text-blue-50"/>
             
         </main>
     )
